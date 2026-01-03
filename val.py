@@ -80,11 +80,12 @@ if __name__ == "__main__":
     accuracies = np.array(accuracies)[sorted_indices]
 
     # Plot
+    os.makedirs("results", exist_ok=True)
     plt.plot(sample_sizes // 2, accuracies, marker='.')
     plt.xlabel('Number of Samples per Class')
     plt.ylabel('Accuracy')
     plt.title('Validation Accuracy vs Number of Samples per Class')
     plt.grid()
-    plt.savefig("accuracy_vs_samples_per_class.png")
+    plt.savefig("results/accuracy_vs_samples_per_class.png")
     plt.show()
     plt.close()

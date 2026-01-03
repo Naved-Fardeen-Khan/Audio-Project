@@ -26,6 +26,7 @@ if __name__ == "__main__":
     print(class_report)
 
     # Plot confusion matrix as heatmap
+    os.makedirs("results", exist_ok=True)
     sns.heatmap(conf_matrix,
                 annot=True,
                 fmt='d',
@@ -37,6 +38,6 @@ if __name__ == "__main__":
     plt.xlabel('Predicted Label')
     plt.ylabel('True Label')
     plt.title('Confusion Matrix Heatmap')
-    plt.savefig("test_confusion_matrix_heatmap.png")
+    plt.savefig("results/test_confusion_matrix_heatmap.png")
     plt.show()
     plt.close()
