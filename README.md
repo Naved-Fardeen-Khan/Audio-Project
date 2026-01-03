@@ -201,6 +201,19 @@ All splits are **user-disjoint** to prevent data leakage.
 
 ---
 
+## 🔮 Future Work
+
+This project is designed as an extensible framework for audio classification and will be expanded in future work.
+
+- Extend the current binary classifier to a **multi-class audio classification system**
+  (e.g., car, tram, bus, motorcycle).
+- Investigate additional audio features such as **spectral contrast**, **chroma features**,
+  and **log-mel spectrograms**.
+- Compare SVM performance with other classifiers such as **k-Nearest Neighbors** and
+  **neural network-based models**.
+- Explore **data augmentation techniques** to improve robustness to background noise.
+- Evaluate real-time inference capabilities for streaming audio input.
+
 ## 📚 License / Academic Use
 
 This project is intended for **educational and academic purposes**.
