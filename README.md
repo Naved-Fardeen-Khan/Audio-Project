@@ -52,35 +52,31 @@ These features capture perceptually meaningful spectral characteristics of audio
 ```
 project_root/
 │
-├── data/
-│   ├── raw/                  # Original audio files (per user)
-│   ├── processed/            # Trimmed & normalized audio
-│   ├── train_dataset/
-│   │   ├── x_dataset.npy
-│   │   └── y_dataset.npy
-│   ├── val_dataset/
-│   │   ├── x_dataset.npy
-│   │   └── y_dataset.npy
-│   └── test_dataset/
-│       ├── x_dataset.npy
-│       └── y_dataset.npy
+├── train_dataset/
+│   ├── x_dataset.npy
+│   └── y_dataset.npy
+├── val_dataset/
+│   ├── x_dataset.npy
+│   └── y_dataset.npy
+└── test_dataset/
+│   ├── x_dataset.npy
+│   └── y_dataset.npy
 │
 ├── models/
-│   ├── svm_100.pkl
-│   ├── svm_200.pkl
-│   ├── svm_300.pkl
-│   └── ...
+│   ├── svm_2.pkl
+│   ├── svm_4.pkl
+│   ├── svm_6.pkl
+│   ├── ...
+│   └── svm_final.pkl
 │
 ├── scripts/
 │   ├── prepare_data.py       # Audio trimming & normalization
 │   ├── extract_features.py   # MFCC feature extraction
 │   ├── train.py              # Model training
 │   ├── val.py                # Validation evaluation
-│   ├── test.py               # Final test evaluation
-│   └── accuracy_plot.py      # Accuracy vs training size
+│   └── test.py               # Final test evaluation
 │
 ├── results/
-│   ├── confusion_matrix_val.png
 │   ├── confusion_matrix_test.png
 │   └── accuracy_vs_training_samples.png
 │
